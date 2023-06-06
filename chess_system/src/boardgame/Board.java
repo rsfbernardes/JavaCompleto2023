@@ -2,8 +2,8 @@ package boardgame;
 
 public class Board {
 
-	private Integer rows;
-	private Integer columns;
+	private int rows;
+	private int columns;
 	private Piece pieces[][];
 	
 	public Board(Integer rows, Integer columns) {
@@ -23,7 +23,7 @@ public class Board {
 		return columns;
 	}
 	
-	public Piece piece(Integer row, Integer column) {
+	public Piece piece(int row, int column) {
 		if (!positionExists(row, column)) {
 			throw new BoardException("Position doesn't exist on the board");
 		}
@@ -45,8 +45,8 @@ public class Board {
 		piece.position = position;
 	}
 	
-	private boolean positionExists(Integer row, Integer column) {
-		return row >= 0 && row <= rows && column >= 0 && column <= columns;
+	private boolean positionExists(int row, int column) {
+		return row >= 0 && row < rows && column >= 0 && column < columns;
 	}
 	
 	public boolean positionExists(Position position) {

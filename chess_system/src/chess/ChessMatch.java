@@ -132,6 +132,7 @@ public class ChessMatch {
 
 	private void nextTurn() {
 		currentPlayer = (currentPlayer == Color.WHITE ? Color.BLACK : Color.WHITE);
+		turn++;
 	}
 
 	private Color opponent(Color color) {

@@ -61,6 +61,7 @@ public class UI {
 			if (chessMatch.getCheck()) {
 				System.out.println(ANSI_RED);
 				System.out.println("CHECK!");
+				System.out.println(ANSI_RESET);
 			}			
 		}
 		else {

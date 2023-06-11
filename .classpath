@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="chess_system/src"/>
+	<classpathentry kind="src" path="composicao_149_exercicio_resolvido/src"/>
+	<classpathentry kind="src" path="composicao_151_exercicio_resolvido_demo_string_builder/src"/>
+	<classpathentry kind="src" path="composicao_152_exercicio_fixacao/src"/>
+	<classpathentry kind="src" path="exception_177_exercicio_fixacao/src"/>
+	<classpathentry kind="src" path="exercicio_fixacao_162_polimorfismo/src"/>
+	<classpathentry kind="src" path="exercicio_fixacao_165_classes_abstratas/src"/>
+	<classpathentry kind="src" path="matriz_103_exercicio_proposto/src"/>
+	<classpathentry kind="output" path="chess_system/bin"/>
+</classpath>

@@ -36,7 +36,7 @@ public class Program {
 		
 		System.out.println("Parcelas:");
 		for (int i = 1; i < months; i++) {
-			System.out.println(contract.getInstallments());
+			System.out.println(contract.getInstallments().get(i).getDueDate() + " - " + contract.getInstallments().get(i).getAmount());
 		}
 		
 		sc.close();

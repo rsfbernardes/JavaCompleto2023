@@ -39,7 +39,7 @@ public class Program {
 		
 		System.out.println("Parcelas:");
 		for (int i = 0; i < months; i++) {
-			System.out.println(contract.getInstallments().get(i).getDueDate() + " - " + String.format("%.2f", contract.getInstallments().get(i).getAmount()));
+			System.out.println(dtf.format(contract.getInstallments().get(i).getDueDate()) + " - " + String.format("%.2f", contract.getInstallments().get(i).getAmount()));
 		}
 		
 		sc.close();

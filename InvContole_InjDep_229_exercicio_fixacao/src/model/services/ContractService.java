@@ -22,7 +22,9 @@ public class ContractService {
 		LocalDate date = contract.getDate();
 		
 		for (int i = 1; i <= months; i++) {
-			total = onlinePaymentService.interest(contract.getTotalValue()/months, i) + onlinePaymentService.paymentFee(contract.getTotalValue()/months);
+			Double totalInterest = onlinePaymentService.interest(contract.getTotalValue()/months, i);
+			Double totalPaymentFee = onlinePaymentService.paymentFee(totalInterest);
+			total = totalInterest + totalPaymentFee;
 			date = date.plusMonths(i);
 			Installment installment = new Installment(date, total);
 			installments.add(installment);

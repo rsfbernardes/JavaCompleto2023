@@ -7,7 +7,7 @@ public class Course {
 
 	private String name;
 	private Instructor instructor;
-	private Set<Student> students = new HashSet<>();
+	private final Set<Student> students = new HashSet<>();
 	
 	public Course(String name, Instructor instructor) {
 		this.name = name;

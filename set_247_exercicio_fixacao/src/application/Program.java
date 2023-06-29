@@ -16,8 +16,6 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-//		Set<Student> totalStudents = new HashSet<>();
-		
 		Instructor alex = new Instructor("Alex", 99);
 		
 		Course A = new Course("A", alex);

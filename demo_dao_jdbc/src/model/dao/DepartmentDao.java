@@ -6,9 +6,9 @@ import model.entities.Department;
 
 public interface DepartmentDao {
 
-		void create(Department department);
-		void update(Department department);
-		void deleteById(Integer id);
-		Department findById(Integer id);
-		List<Department> findAll();
+	void create(Department department);
+	void update(Department department);
+	void deleteById(Integer id);
+	Department findById(Integer id);
+	List<Department> findAll();
 }
